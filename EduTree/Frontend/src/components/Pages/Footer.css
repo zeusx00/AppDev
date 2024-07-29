@@ -1,0 +1,84 @@
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 40px 0;
+    font-family: var(--font-name);
+  }
+  
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer__title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer__about,
+  .footer__links,
+  .footer__social {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .footer__about p,
+  .footer__links ul,
+  .footer__social .social__icons {
+    font-size: 1rem;
+    line-height: 28px;
+  }
+  
+  .footer__links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer__links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer__links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer__links a:hover {
+    color: var(--highlight-color);
+  }
+  
+  .social__icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .social__icons a:hover {
+    color: var(--highlight-color);
+  }
+  
+  .footer__bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+  }
+  
+  .footer__bottom p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  
+.footer__links a,
+.footer__contact a {
+  color: inherit; /* Inherit the color from parent element */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px;
+}
+  

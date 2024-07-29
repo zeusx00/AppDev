@@ -1,0 +1,79 @@
+/* AdminDashboard.css */
+
+/* Define CSS variables */
+:root {
+  --primary-color: #ff5722; /* Orange for primary color */
+  --heading-color: #131212; /* White for heading color */
+  --background-color: #f8f9fa; /* Light gray for background */
+  --drawer-bg-color: #333; /* Dark background for the drawer */
+  --selected-item-bg-color: #454545; /* Slightly darker gray for selected items */
+  --font-name: 'Arial', sans-serif; /* Example font family */
+}
+
+.admin-dashboard {
+font-family: var(--font-name);
+}
+
+.dashboard-content {
+margin-top: 64px; /* Adjusted for AppBar */
+background-color: var(--background-color);
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+color: #333;
+}
+
+.MuiAppBar-root {
+background-color: var(#ff5722);
+}
+
+.app-bar {
+background-color: var(#ff5722);
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.app-bar-title {
+color: white;
+font-weight: bold;
+}
+
+.MuiDrawer-paper {
+background-color: var(--drawer-bg-color);
+}
+
+.MuiListItem-root {
+color: var(--heading-color);
+transition: background-color 0.3s;
+}
+
+.MuiListItem-root:hover {
+background-color: var(--selected-item-bg-color);
+}
+
+.selected {
+background-color: var(--primary-color); /* Changed to primary color */
+}
+
+.MuiListItemIcon-root {
+color: var(--heading-color);
+}
+
+.dashboard-title {
+color: var(--primary-color);
+font-weight: bold;
+}
+
+.avatar {
+background-color: var(--primary-color);
+color: var(--heading-color);
+}
+
+/* Add responsive styling */
+@media (max-width: 600px) {
+.dashboard-content {
+  margin-top: 56px; /* Adjust for smaller AppBar on mobile */
+  padding: 15px;
+}
+}
